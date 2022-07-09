@@ -12,7 +12,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./homebridge-ui",
+    "outDir": "./dist/homebridge-ui",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,

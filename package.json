@@ -19,9 +19,9 @@
   "scripts": {
     "lint": "eslint src/** --max-warnings=0",
     "watch": "npm run build && npm link && nodemon",
-    "build": "npm run build-plugin && npm run build-configui",
-    "build-plugin": "rimraf ./dist && tsc --project tsconfig.plugin.json",
-    "build-configui": "rimraf ./homebridge-ui && ng build --base-href /api/plugins/settings-ui/homebridge-eufy-security/ && tsc --project tsconfig.configui.server.json",
+    "build": "rimraf ./dist && npm run build-plugin && npm run build-configui",
+    "build-plugin": "tsc --project tsconfig.plugin.json",
+    "build-configui": "rimraf ./dist/homebridge-ui && ng build --base-href /api/plugins/settings-ui/homebridge-eufy-security/ && tsc --project tsconfig.configui.server.json",
     "serve-configui": "ng serve",
     "prepublishOnly": "npm run lint && npm run build"
   },

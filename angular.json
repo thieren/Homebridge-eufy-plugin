@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "homebridge-ui/public",
+            "outputPath": "dist/homebridge-ui/public",
             "index": "src/configui/index.html",
             "main": "src/configui/main.ts",
             "polyfills": "src/configui/polyfills.ts",
