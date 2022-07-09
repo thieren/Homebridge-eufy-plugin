@@ -40,6 +40,8 @@ class UiServer extends HomebridgePluginUiServer {
       }],
     });
 
+    //TODO: change path to eufy-security-client package.json
+
     if (!fs.existsSync(this.storagePath)) {
       fs.mkdirSync(this.storagePath);
     }
