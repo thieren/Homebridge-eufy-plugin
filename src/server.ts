@@ -26,7 +26,7 @@ class UiServer extends HomebridgePluginUiServer {
 
     this.eufyClient = null;
 
-    const plugin = require('../package.json');
+    const plugin = require('../../package.json');
 
     this.log = bunyan.createLogger({
       name: '[EufySecurity-' + plugin.version + ']',
